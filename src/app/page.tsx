@@ -1,6 +1,14 @@
 import Link from 'next/link';
 import css from './page.module.css';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'RentalCar — Home',
+  description:
+    'Find your perfect rental car. Reliable and budget-friendly rentals for any journey.',
+};
+
 export default function HomePage() {
   return (
     <main className={css.hero}>

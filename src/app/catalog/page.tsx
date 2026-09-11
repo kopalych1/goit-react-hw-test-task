@@ -2,6 +2,13 @@ import { QueryClient, HydrationBoundary, dehydrate } from '@tanstack/react-query
 import { fetchCars } from '@/lib/api/cars';
 import CatalogClient from './Catalog.client';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'RentalCar — Catalog',
+  description: 'Browse our full catalog of rental cars, filter by brand, price, and mileage.',
+};
+
 export default async function CatalogPage() {
   const queryClient = new QueryClient();
 
