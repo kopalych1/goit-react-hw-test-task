@@ -3,6 +3,8 @@ import { Roboto } from 'next/font/google';
 
 import './globals.css';
 
+import { Toaster } from 'react-hot-toast';
+
 import TanStackProvider from '@/components/TanStackProvider/TanStackProvider';
 import Header from '@/components/Header/Header';
 
@@ -30,6 +32,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={roboto.variable}>
       <body>
+        <Toaster />
         <TanStackProvider>
           <Header />
           {children}

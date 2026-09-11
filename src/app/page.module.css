@@ -1,0 +1,52 @@
+.hero {
+  position: relative;
+  flex: 1;
+  min-height: calc(100vh - 76px);
+  display: flex;
+  align-items: flex-end;
+  background-image: url('/hero-car.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(16, 24, 40, 0.6), rgba(16, 24, 40, 0));
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 0 88px 120px;
+  max-width: 700px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 16px;
+  line-height: 1.15;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--color-white);
+  margin: 0 0 32px;
+}
+
+.button {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: var(--radius-pill);
+}
+
+.button:hover {
+  background-color: var(--color-primary-dark);
+}

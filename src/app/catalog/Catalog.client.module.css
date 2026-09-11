@@ -1,0 +1,32 @@
+.page {
+  padding: 40px 88px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+}
+
+.loadMore {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 32px;
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-pill);
+  font-weight: 500;
+}
+
+.loadMore:hover {
+  background-color: var(--color-bg-alt);
+}
+
+.loadMore:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
